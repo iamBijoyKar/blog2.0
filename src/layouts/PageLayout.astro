@@ -1,0 +1,42 @@
+---
+import "@/styles/global.css";
+import { ViewTransitions } from "astro:transitions";
+import Header from "@/components/Header/Header.astro";
+import Footer from "@/components/Footer/Footer.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title }: Props = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Parsonal Blog" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class="bg-primary-bg text-primary-text font-sans">
+    <div class="">
+      <Header />
+    </div>
+    <main class="container mx-auto px-4 mt-[4rem]">
+      <slot />
+    </main>
+    <Footer />
+    <script>
+      document.addEventListener("astro:after-swap", (e) => {
+        document.documentElement.setAttribute(
+          "data-theme",
+          localStorage.getItem("theme") || "auto",
+        );
+      });
+    </script>
+  </body>
+</html>

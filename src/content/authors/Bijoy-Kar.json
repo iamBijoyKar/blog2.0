@@ -1,0 +1,15 @@
+{
+  "name": "Bijoy Kar",
+  "headlines": "Full Stack Web Developer 🕸️ | Student at Swami Vivekananda University 👨‍🎓 | Python 🐍 , JavaScript ⚙️ | Machine Learning / AI 🤖",
+  "about": "I am a student at Swami Vivekananda University. I am pursuing my bachelor's degree in Computer Science (B.Tech) and hope to become a software engineer in the future. My hobbies include playing video games, and listening to music.",
+  "profileImgLink": "https://avatars.githubusercontent.com/u/85790967?v=4",
+  "links": {
+    "linkedIn": "https://www.linkedin.com/in/iambijoykar/",
+    "twitter": "https://twitter.com/iamBijoyKar",
+    "github": "https://github.com/iamBijoyKar"
+  },
+  "articleCount": 9,
+  "articles": [],
+  "skills": ["Web Development", "React", "Astro", "JavaScript", "Python"],
+  "college": "Swami Vivekananda University"
+}

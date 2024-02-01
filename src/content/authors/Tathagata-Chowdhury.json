@@ -1,0 +1,15 @@
+{
+  "name": "Tathagata Chowdhury",
+  "headlines": "Data Analyst | Student at MCKV Institute of Engineering 👨‍🎓 | Python 🐍 | Machine Learning / AI 🤖",
+  "about": "I am a student at  MCKV Institute of Engineering. I am pursuing my bachelor's degree in Computer Science(Data Science) (B.Tech) and hope to become a data analyst/data scientist in the future. My hobbies include playing video games, and listening to music.",
+  "profileImgLink": "/tathagata-chowdhury.jpeg",
+  "links": {
+    "linkedIn": "https://www.linkedin.com/in/tathagata-chowdhury-a24184225",
+    "github": "https://github.com/Tathagata642",
+    "twitter": ""
+  },
+  "articleCount": 0,
+  "articles": [],
+  "skills": ["Web Development", "ML", "JavaScript", "Python"],
+  "college": "MCKV Institute of Engineering"
+}

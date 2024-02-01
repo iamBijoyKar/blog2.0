@@ -1,0 +1,45 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-bg: 255 255 255;
+    --secondary-bg: 229 229 229;
+    --ternary-bg: 237 242 244;
+    --primary-text: 0 0 0;
+    --secondary-text: 108 117 125;
+    --special-text: 0 0 0;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary-bg: 33 37 41;
+      --secondary-bg: 11 9 10;
+      --ternary-bg: 37 37 64;
+      --primary-text: 255 255 255;
+      --secondary-text: 200 200 200;
+      --special-text: 255 255 255;
+      color-scheme: dark;
+    }
+  }
+  [data-theme="dark"] {
+    --primary-bg: 33 37 41;
+    --secondary-bg: 11 9 10;
+    --ternary-bg: 37 37 64;
+    --primary-text: 255 255 255;
+    --secondary-text: 200 200 200;
+    --special-text: 255 255 255;
+    color-scheme: dark;
+  }
+  [data-theme="light"] {
+    --primary-bg: 255 255 255;
+    --secondary-bg: 229 229 229;
+    --ternary-bg: 237 242 244;
+    --primary-text: 0 0 0;
+    --secondary-text: 108 117 125;
+    --special-text: 0 0 0;
+    color-scheme: light;
+  }
+}
