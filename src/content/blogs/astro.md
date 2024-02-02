@@ -1,13 +1,13 @@
 ---
-layout: "../../layouts/Blog.astro"
+# layout: "../../layouts/Blog.astro"
 title: "Astro"
 description: "Astro is an open-source, modular framework for building scalable and high-performance web applications. "
 pubdate: "Feb 12,2023"
 tags: [Astro, JavaScript]
-author: 'Bijoy Kar'
-uuid: 'blog-bijoy-kar.netlify.astro'
+author: "Bijoy Kar"
+uuid: "blog-bijoy-kar.netlify.astro"
 heroImg: "/astro.jpg"
-authorHeadline: 'Full Stack Developer | Student'
+authorHeadline: "Full Stack Developer | Student"
 authorImgLink: "https://avatars.githubusercontent.com/u/85790967?v=4"
 ---
 
