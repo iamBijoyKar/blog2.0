@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = CollectionEntry<"blogs">["data"];
+
+const { title, description, pubdate, author, heroImg, tags } = Astro.props;
+---
+
+<h1>{title}</h1>
+<p>{description}</p>
+<p>Published on {pubdate} by {author}</p>
+<img src={heroImg} alt={title} />
+
+<slot />

@@ -22,11 +22,11 @@ const { title }: Props = Astro.props;
     <title>{title}</title>
     <ViewTransitions />
   </head>
-  <body class="bg-primary-bg text-primary-text font-sans">
+  <body class="bg-primary-bg text-primary-text font-body">
     <div class="">
       <Header />
     </div>
-    <main class="container mx-auto px-4 mt-[4rem]">
+    <main class="container mx-auto px-4 mt-[4rem] min-h-[80vh]">
       <slot />
     </main>
     <Footer />

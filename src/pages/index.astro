@@ -1,12 +1,14 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
+import Hero from "@/components/Home/Hero/Hero.astro";
+import RecentsArticles from "@/components/Home/RecentsArticles.astro";
 ---
 
 <PageLayout title="Home | Bijoy Kar">
+  <div class="mt-10">
+    <Hero />
+  </div>
   <div class="">
-    <span class="text-primary-text">Welcome to Astro.</span>
-    <span class="text-secondary-text">Welcome to Astro.</span>
-    <span class="bg-primary-bg">Welcome to Astro.</span>
-    <span class="bg-secondary-bg">Welcome to Astro.</span>
+    <RecentsArticles />
   </div>
 </PageLayout>

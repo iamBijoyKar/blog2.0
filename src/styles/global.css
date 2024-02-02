@@ -5,8 +5,8 @@
 
 @layer base {
   :root {
-    --primary-bg: 255 255 255;
-    --secondary-bg: 229 229 229;
+    --primary-bg: 229 229 229;
+    --secondary-bg: 233 236 239;
     --ternary-bg: 237 242 244;
     --primary-text: 0 0 0;
     --secondary-text: 108 117 125;
@@ -34,12 +34,27 @@
     color-scheme: dark;
   }
   [data-theme="light"] {
-    --primary-bg: 255 255 255;
-    --secondary-bg: 229 229 229;
+    --primary-bg: 229 229 229;
+    --secondary-bg: 233 236 239;
     --ternary-bg: 237 242 244;
     --primary-text: 0 0 0;
     --secondary-text: 108 117 125;
     --special-text: 0 0 0;
     color-scheme: light;
   }
+}
+
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }

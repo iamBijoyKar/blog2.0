@@ -1,0 +1,26 @@
+---
+import ArticlePreview from "@/components/Blog/ArticlePreview.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blogs")).sort(
+  (a, b) => a.data.pubdate.valueOf() - b.data.pubdate.valueOf(),
+);
+---
+
+<div class="my-10 mt-20">
+  <h1 class="text-4xl font-bold mb-4 text-center">Recent Articles</h1>
+  <div class="flex flex-col w-full justify-center items-center gap-3">
+    {
+      posts.map((post) => (
+        <ArticlePreview
+          title={post.data.title}
+          description={post.data.description}
+          pubdate={post.data.pubdate}
+          author={post.data.author}
+          slug={`/blog/${post.slug}`}
+          tags={post.data.tags}
+        />
+      ))
+    }
+  </div>
+</div>

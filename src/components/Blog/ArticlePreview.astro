@@ -1,0 +1,38 @@
+---
+import Tag from "./Tag.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  author: string;
+  tags: string[];
+  pubdate: string;
+  slug: string;
+}
+
+const { title, description, author, tags, pubdate, slug }: Props = Astro.props;
+---
+
+<a href={slug} class="">
+  <div
+    class="flex flex-col gap-2 w-full max-w-[700px] p-4 rounded border border-secondary-text hover:shadow-lg transition-all duration-300"
+  >
+    <h3 class="text-2xl font-bold">
+      {title}
+    </h3>
+    <div class="flex justify-between items-center text-secondary-text">
+      <span class="">
+        {pubdate}
+      </span>
+      <span class="">
+        {author}
+      </span>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      {tags.map((tag) => <Tag label={tag} />)}
+    </div>
+    <p class="">
+      {description}
+    </p>
+  </div>
+</a>

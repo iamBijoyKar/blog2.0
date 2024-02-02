@@ -15,6 +15,7 @@ export default {
     fontFamily: {
       sans: ["Helvatica", "Inter", "sans-serif"],
       serif: ["Merriweather", "serif"],
+      body: ["Atkinson", "sans-serif"],
     },
   },
   plugins: [],

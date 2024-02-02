@@ -4,16 +4,22 @@ const { pathname } = Astro.url;
 
 <nav class="hidden sm:block text-lg h-[4rem] pt-4">
   <ul class="flex gap-4 h-full">
-    <li class={`${pathname == "/" ? "border-b-2" : ""}`}>
+    <li class={`${pathname == "/" ? "border-b-2 border-primary-text" : ""}`}>
       <a href="/">Home</a>
     </li>
-    <li class={`${pathname == "/blog" ? "border-b-2" : ""}`}>
+    <li
+      class={`${pathname == "/blog" ? "border-b-2 border-primary-text" : ""}`}
+    >
       <a href="/blog">Blog</a>
     </li>
-    <li class={`${pathname == "/authors" ? "border-b-2" : ""}`}>
+    <li
+      class={`${pathname == "/authors" ? "border-b-2 border-primary-text" : ""}`}
+    >
       <a href="/authors">Authors</a>
     </li>
-    <li class={`${pathname == "/contact" ? "border-b-2" : ""}`}>
+    <li
+      class={`${pathname == "/contact" ? "border-b-2 border-primary-text" : ""}`}
+    >
       <a href="/contact">Contact</a>
     </li>
   </ul>

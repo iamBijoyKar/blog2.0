@@ -30,7 +30,7 @@
 </script>
 
 <div class="flex items-center gap-2">
-    <a href="https://github.com/iamBijoyKar" target="_blank" class="border border-secondary-text p-[6px] rounded-lg">
+    <a href="https://github.com/iamBijoyKar" target="_blank" class="border border-secondary-text p-[9px] rounded-lg">
         <Icon icon="line-md:github-loop" class="text-primary-text w-6 h-6" />
     </a>
     <div class="flex justify-center items-center border border-secondary-text p-1 rounded-lg">
