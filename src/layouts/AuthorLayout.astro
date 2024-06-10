@@ -1,0 +1,21 @@
+---
+import PageLayout from "./PageLayout.astro";
+const {
+  data: {
+    name,
+    headlines,
+    about,
+    skills,
+    college,
+    profileImgLink,
+    links,
+    articleCount,
+  },
+} = Astro.props;
+---
+
+<PageLayout title={name}>
+  <div class="w-full max-w-[800px] py-4 mx-auto">
+    <p class="">Hi Author</p>
+  </div>
+</PageLayout>
