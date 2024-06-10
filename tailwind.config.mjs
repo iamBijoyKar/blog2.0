@@ -18,5 +18,5 @@ export default {
       body: ["Atkinson", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
