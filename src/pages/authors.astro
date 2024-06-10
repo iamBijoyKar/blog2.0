@@ -1,8 +1,15 @@
 ---
 import PageLayout from "@/layouts/PageLayout.astro";
+import { getCollection } from "astro:content";
+import AuthorSearch from "@/components/Author/AuthorSearch.svelte";
+
+const authors = await getCollection("authors");
+
+console.log(authors);
 ---
 
 <PageLayout title="Authors | Bijoy Kar">
-  <h1>Authors</h1>
-  <p>Coming soon...</p>
+  <div class="mt-10 flex justify-center py-4">
+    <AuthorSearch client:idle {authors} />
+  </div>
 </PageLayout>
