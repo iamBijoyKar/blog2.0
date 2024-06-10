@@ -4,9 +4,11 @@ import ArticlePreview from "@/components/Blog/ArticlePreview.astro";
 import BlogSearch from "@/components/Blog/BlogSearch.svelte";
 import { getCollection } from "astro:content";
 
-const articles = (await getCollection("blogs")).sort(
-  (a, b) => a.data.pubdate.valueOf() - b.data.pubdate.valueOf(),
-);
+const articles = (await getCollection("blogs")).sort((a, b) => {
+  const dateA = new Date(a.data.pubdate);
+  const dateB = new Date(b.data.pubdate);
+  return dateB.valueOf() - dateA.valueOf();
+});
 ---
 
 <PageLayout title="Blog | Bijoy Kar">
