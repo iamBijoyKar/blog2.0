@@ -1,9 +1,5 @@
 ---
-interface Prop {
-  label: string;
-}
-
-const { label }: Prop = Astro.props;
+const { label } = Astro.props;
 ---
 
 <span class="bg-indigo-400 px-3 py-[4px] rounded-full text-white">
