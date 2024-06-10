@@ -1,18 +1,17 @@
 ---
-layout: "../../layouts/Blog.astro"
+# layout: "../../layouts/Blog.astro"
 title: "Whys you should use JavaScript"
 description: "JavaScript is a programming language that is widely used throughout the world. JavaScript is a powerful and versatile programming language that is well-suited for a wide range of tasks. "
 pubdate: "Jan 22,2023"
 tags: [JavaScript]
-author: 'Bijoy Kar'
-uuid: 'blog-bijoy-kar.netlify.app-whys-you-should-use-javascript'
+author: "Bijoy Kar"
+uuid: "blog-bijoy-kar.netlify.app-whys-you-should-use-javascript"
 heroImg: "/js-cover.png"
-authorHeadline: 'Full Stack Developer | Student'
+authorHeadline: "Full Stack Developer | Student"
 authorImgLink: "https://avatars.githubusercontent.com/u/85790967?v=4"
 ---
 
 Hi, everyone I am Bijoy Kar. Thank you for reading Whys you should use JavaScript. Thank you to all of you for supporting me. I am quite active, I post daily on Twitter and LinkedIn so if you like then give me a follow.
-
 
 ---
 

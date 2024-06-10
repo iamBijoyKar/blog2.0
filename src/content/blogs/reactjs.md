@@ -1,13 +1,13 @@
 ---
-layout: "../../layouts/Blog.astro"
+# layout: "../../layouts/Blog.astro"
 title: "ReactJs"
 description: "React is a popular JavaScript library for building user interfaces. React is used to create dynamic and interactive user interfaces, and it is considered one of the most efficient and easy-to-use libraries for this purpose. "
 pubdate: "Feb 12,2023"
-tags: [ React, JavaScript]
-author: 'Bijoy Kar'
-uuid: 'blog-bijoy-kar.netlify.reactjs'
+tags: [React, JavaScript]
+author: "Bijoy Kar"
+uuid: "blog-bijoy-kar.netlify.reactjs"
 heroImg: "/react.jpg"
-authorHeadline: 'Full Stack Developer | Student'
+authorHeadline: "Full Stack Developer | Student"
 authorImgLink: "https://avatars.githubusercontent.com/u/85790967?v=4"
 ---
 
@@ -28,10 +28,6 @@ React also has a large and active community of developers who contribute to the 
 React is also used in conjunction with other libraries and tools, such as React Native, which allows developers to build native mobile applications using the same principles and concepts as React. This allows developers to write once and reuse the code across multiple platforms, reducing the amount of time and effort required to build and maintain applications.
 
 In conclusion, React is a powerful and versatile library for building user interfaces. Its focus on components, the virtual DOM, and declarative programming make it easy to build complex and dynamic user interfaces, and its active community of developers ensures that it continues to evolve and improve. Whether you're building a website, a mobile application, or a single-page application, React is a great choice for building high-quality user interfaces.
-
-
-
-
 
 ---
 

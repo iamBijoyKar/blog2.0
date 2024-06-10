@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Blog.astro"
+# layout: "../../layouts/Blog.astro"
 title: "Google It Like a Pro"
 description: "Anime website built with Bootstrap5, Swiper, Font Awesome, and custom CSS/JS. Includes 3D slider, popular anime storylines, and contact form. "
 pubdate: "Mar 23,2023"
@@ -23,7 +23,7 @@ Search syntax is a set of rules that tell Google how to interpret your query and
 - **Minus sign** (-): Use it to exclude a word or phrase from your search. For example, apple -pie will show results that contain apple but not pie, while apple pie -recipe will show results that contain apple pie but not recipe.
 - **Site**: Use it to search within a specific website or domain. For example, site:freecodecamp.org python will show results that are from freecodecamp.org and contain python, while site:.edu python will show results that are from any .edu domain and contain python.
 - **Related**: Use it to find websites that are similar to a given one. For example, related:nytimes.com will show websites that are similar to nytimes.com in terms of content, audience, or purpose.
-- **Asterisk** (*): Use it as a wildcard to replace any word or phrase. For example, how to * a cake will show results that contain how to followed by any word or phrase and then followed by a cake, such as how to make a cake, how to decorate a cake, etc.
+- **Asterisk** (_): Use it as a wildcard to replace any word or phrase. For example, how to _ a cake will show results that contain how to followed by any word or phrase and then followed by a cake, such as how to make a cake, how to decorate a cake, etc.
 - **Filetype**: Use it to search for files of a specific type. For example, filetype:pdf python will show results that are PDF files and contain python, while filetype:pptx marketing will show results that are PowerPoint presentations and contain marketing.
 - **OR**: Use it to combine two or more terms and show results that contain either one of them. For example, python OR java will show results that contain either python or java (or both), while "how to code" OR "learn programming" will show results that contain either how
   to code or learn programming (or both).

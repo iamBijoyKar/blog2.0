@@ -1,22 +1,19 @@
 ---
-layout: "../../layouts/Blog.astro"
+# layout: "../../layouts/Blog.astro"
 title: "JavaScript vs Python"
 description: "JavaScript and Python both programming language are one of the most popular languages in the world. "
 pubdate: "Jan 7,2023"
-tags: [ Python, JavaScript ,Programming Language, ]
-author: 'Bijoy Kar'
-uuid: 'blog-bijoy-kar.netlify.app-javascript-vs-python'
+tags: [Python, JavaScript, Programming Language]
+author: "Bijoy Kar"
+uuid: "blog-bijoy-kar.netlify.app-javascript-vs-python"
 heroImg: "/js-python.png"
-authorHeadline: 'Full Stack Developer | Student'
+authorHeadline: "Full Stack Developer | Student"
 authorImgLink: "https://avatars.githubusercontent.com/u/85790967?v=4"
 ---
-
 
 Hi, everyone I am Bijoy Kar. Thank you for reading JavaScript vs Python. Thank you to all of you for supporting me. I am quite active, I post daily on Twitter and LinkedIn so if you like then give me a follow.
 
 ---
-
-
 
 Python and JavaScript are two of the most popular programming languages in the world. They are both widely used in web development, data science, and many other fields, but they have some key differences that set them apart.
 One of the main differences between Python and JavaScript is the way they are designed. Python is a high-level, general-purpose programming language that is known for its simplicity and ease of use. It has a large standard library and a large community of users who contribute to the development of libraries and frameworks that make it easier to use.
@@ -33,8 +30,3 @@ In summary, Python and JavaScript are both powerful programming languages with t
 ---
 
 Thank you for reading this article, if like to read more of my article then subscribe my newsletter Weekly Coding Dose and give a follow. I post daily on LinkedIn and Twitter.
-
-
-
-
-
