@@ -7,5 +7,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), icon(), svelte(), sitemap()]
+  integrations: [tailwind(), icon(), svelte(), sitemap()],
+  site: "https://bijoykar.com",
 });
