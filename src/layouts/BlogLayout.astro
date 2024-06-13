@@ -3,10 +3,9 @@ import type { CollectionEntry } from "astro:content";
 import PageLayout from "./PageLayout.astro";
 import Tag from "@/components/Blog/Tag.astro";
 
-type Props = CollectionEntry<"blogs">["data"];
+// type Props = CollectionEntry<"blogs">["data"];
 
-const { title, description, pubdate, author, heroImg, tags } = Astro.props
-  .data as Props;
+const { title, description, pubdate, author, heroImg, tags } = Astro.props.data;
 ---
 
 <PageLayout title={title}>
