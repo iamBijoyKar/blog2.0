@@ -1,8 +1,75 @@
 ---
 import PageLayout from "@/layouts/PageLayout.astro";
+import InfoCard from "@/components/Contact/InfoCard.astro";
+import { Image } from "astro:assets";
+import img1 from "@/assets/con-img1.jpg";
+import article from "@/assets/article.png";
+import job from "@/assets/job.png";
 ---
 
 <PageLayout title="Contact | Bijoy Kar">
-  <h1>Contact</h1>
-  <p>Coming soon...</p>
+  <div class="mt-20 flex flex-col sm:flex-row gap-4 justify-center py-4">
+    <div class="w-full relative">
+      <Image
+        src={img1}
+        alt="Contact"
+        class="rounded object-cover opacity-60 h-[500px] w-full"
+      />
+      <div
+        class="absolute top-0 left-0 w-full h-full p-4 md:p-6 backdrop:backdrop-blur-sm backdrop:bg-slate-400/50"
+      >
+        <h1 class="text-3xl md:text-4xl mt-6 font-bold font-sans">
+          Want to write a article for us? <br />
+        </h1>
+        <p class="mt-4 text-lg">
+          We are always looking for new articles to publish on our site. If you
+          have an idea for an article, please get in touch with us.
+        </p>
+        <p class="text-lg mt-4">
+          The topics that we are interested in are: <br />
+        </p>
+        <ul class="list-disc text-lg list-inside mt-4">
+          <li>
+            <span class="bg-slate-500/60 px-3 rounded-full"
+              >Web Development</span
+            >
+          </li>
+          <li>
+            <span class="bg-slate-500/60 px-3 rounded-full"
+              >Software Development</span
+            >
+          </li>
+          <li>
+            <span class="bg-slate-500/60 px-3 rounded-full">Programming</span>
+          </li>
+          <li>
+            <span class="bg-slate-500/60 px-3 rounded-full">Technology</span>
+          </li>
+          <li><span class="bg-slate-500/60 px-3 rounded-full">AI/ML</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full">
+      <h1 class="text-3xl text-center font-bold mt-4">Contact Us</h1>
+      <div class="flex flex-row flex-wrap justify-around gap-3 mt-6">
+        <InfoCard icon={article} title="Want to write an article?" />
+        <InfoCard icon={job} title="Are you a recruiter?" />
+        <InfoCard icon={article} title="Have queries from us?" />
+      </div>
+      <div class="mx-6">
+        <p class="text-left text-xl mt-6">
+          If you have any queries, please feel free to contact us. We will get
+          back to you as soon as possible.
+        </p>
+        <div class="flex justify-start md:justify-center">
+          <button
+            type="button"
+            class="px-4 py-2 text-xl bg-purple-500 mt-8 rounded-lg"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </PageLayout>
