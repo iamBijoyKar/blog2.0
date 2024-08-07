@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import { nameToSlug } from "@/utils";
+const { author, authorImgLink } = Astro.props;
+
+const authorSlug = nameToSlug(author);
+---
+
+<a href={`/authors/${authorSlug}`}>
+  <div class="flex w-[250px] gap-3 items-center bg-green-500 p-3 rounded-xl">
+    <Image
+      src={authorImgLink}
+      class="rounded-full"
+      alt={author}
+      width={48}
+      height={48}
+    />
+    <p class="text-lg truncate">{author}</p>
+  </div>
+</a>

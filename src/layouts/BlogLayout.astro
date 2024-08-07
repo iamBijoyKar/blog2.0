@@ -2,10 +2,12 @@
 import type { CollectionEntry } from "astro:content";
 import PageLayout from "./PageLayout.astro";
 import Tag from "@/components/Blog/Tag.astro";
+import AuthotCard from "@/components/Blog/AuthotCard.astro";
 
 // type Props = CollectionEntry<"blogs">["data"];
 
-const { title, description, pubdate, author, heroImg, tags } = Astro.props.data;
+const { title, description, pubdate, author, heroImg, tags, authorImgLink } =
+  Astro.props.data;
 ---
 
 <PageLayout title={title}>
@@ -34,12 +36,15 @@ const { title, description, pubdate, author, heroImg, tags } = Astro.props.data;
     <section>
       <slot />
     </section>
-    <footer>
+    <footer class="flex flex-col my-4">
       <div class="flex items-center gap-2 my-3">
         <p class="text-xl">Tags:</p>
         <ul class="flex items-center gap-2 flex-wrap">
           {tags.map((tag: string) => <Tag label={tag} />)}
         </ul>
+      </div>
+      <div class="flex items-center gap-2 justify-end">
+        <AuthotCard author={author} authorImgLink={authorImgLink} />
       </div>
     </footer>
   </article>
