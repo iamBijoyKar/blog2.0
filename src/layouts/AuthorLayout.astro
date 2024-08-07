@@ -14,7 +14,7 @@ const {
     articleCount,
   },
 } = Astro.props;
-console.log(skills);
+// console.log(skills);
 ---
 
 <PageLayout title={name}>
@@ -25,6 +25,7 @@ console.log(skills);
           src={profileImgLink}
           alt={`${name}`}
           class="w-[200px] h-[200px] rounded-full"
+          transition:name="profile"
         />
       </div>
       <h1 class="text-3xl font-bold text-center mt-4">{name}</h1>
