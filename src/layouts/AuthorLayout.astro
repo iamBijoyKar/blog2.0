@@ -1,6 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import PageLayout from "./PageLayout.astro";
 import Tag from "@/components/Blog/Tag.astro";
+
+import linkedinIcon from "@/assets/icons/linkedin.svg";
+import githubIcon from "@/assets/icons/github1.svg";
+import xIcon from "@/assets/icons/x.svg";
+import universityIcon from "@/assets/icons/university.svg";
 
 const {
   data: {
@@ -30,12 +36,69 @@ const {
       </div>
       <h1 class="text-3xl font-bold text-center mt-4">{name}</h1>
       <p class="text-center mt-2 text-xl">{headlines}</p>
-      <p class="text-center text-xl my-4 font-medium text-primary-text/70">
-        {college}
+      <p
+        class="text-center text-xl my-4 font-medium text-primary-text/70 flex justify-center items-center gap-2"
+      >
+        <Image src={universityIcon} alt="University" width={30} height={30} />
+        <span class="">
+          {college}
+        </span>
       </p>
       <p class="text-center mt-2 text-lg">{about}</p>
       <div class="flex justify-center mt-4 space-x-4">
         {skills?.map((skill) => <Tag label={skill} />)}
+      </div>
+      <div class="flex flex-col items-center justify-center mt-4 gap-2">
+        <p class="text-lg font-semibold">Social Links</p>
+        <div
+          class="bg-white w-fit flex gap-4 items-center justify-center rounded-full px-4 py-1"
+        >
+          {
+            links["linkedIn"] && (
+              <a
+                href={links["linkedIn"]}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:scale-110 transform transition-all "
+              >
+                <Image
+                  src={linkedinIcon}
+                  alt="LinkedIn"
+                  width={48}
+                  height={48}
+                />
+              </a>
+            )
+          }
+          {
+            links["github"] && (
+              <a
+                href={links["github"]}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:scale-110 transform transition-all "
+              >
+                <Image src={githubIcon} alt="GitHub" width={37} height={37} />
+              </a>
+            )
+          }
+          {
+            links["twitter"] && (
+              <a
+                href={links["twitter"]}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:scale-110 transform transition-all "
+              >
+                <Image src={xIcon} alt="Twitter" width={43} height={43} />
+              </a>
+            )
+          }
+        </div>
+        <p class="mt-6">
+          {articleCount}
+          {articleCount > 1 ? "Articles" : "Article"}
+        </p>
       </div>
     </div>
   </div>
