@@ -30,17 +30,17 @@
 </script>
 
 <div class="flex items-center gap-2">
-    <a href="https://github.com/iamBijoyKar" target="_blank" class="border border-secondary-text p-[9px] rounded-lg">
-        <Icon icon="line-md:github-loop" class="text-primary-text w-6 h-6" />
+    <a href="https://github.com/iamBijoyKar" target="_blank" class="border border-secondary-text p-[9px] rounded-lg" aria-label="github repo link">
+        <Icon icon="line-md:github-loop" class="text-primary-text w-6 h-6" alt="github icon" />
     </a>
     <div class="flex justify-center items-center border border-secondary-text p-1 rounded-lg">
         <label for="mode-toggle" class="flex justify-center items-center gap-1 sm:gap-2 cursor-pointer">
             {#if theme === 'light'}
-            <Icon icon="carbon:sun" class="text-primary-text w-6 h-6" />
+            <Icon icon="carbon:sun" class="text-primary-text w-6 h-6" alt="sun icon" />
             {:else if theme === 'dark'}
-            <Icon icon="carbon:moon" class="text-primary-text w-6 h-6" />
+            <Icon icon="carbon:moon" class="text-primary-text w-6 h-6" alt="moon icon" />
             {:else}
-            <Icon icon="carbon:fade" class="text-primary-text w-6 h-6" />
+            <Icon icon="carbon:fade" class="text-primary-text w-6 h-6" alt="auto icon" />
             {/if}
             <select on:change={(e) => setTheme(e.target.value)} name="mode-toggle" id="mode-toggle" class="rounded capitalize bg-primary-bg p-1 outline-none cursor-pointer" aria-label="Mode Toggler">
                 {#each themes as theme_}
