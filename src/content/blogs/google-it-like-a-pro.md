@@ -6,7 +6,7 @@ pubdate: "Mar 23,2023"
 tags: [Google]
 author: "Bijoy Kar"
 uuid: "blog-bijoy-kar.netlify.google-it-like-a-pro"
-heroImg: "/google-it-like-a-pro-hero.jpeg"
+heroImg: "blog-media/google-it-like-a-pro-hero.jpeg"
 authorHeadline: "Full Stack Developer | Student"
 authorImgLink: "https://avatars.githubusercontent.com/u/85790967?v=4"
 ---
